@@ -9,142 +9,6 @@ React snippets (live templates) for idea.
 
 ## Usage description
 
-### `cdc`
-
-```js
-componentDidCatch() {
-  $END$
-}
-```
-
-### `cdm`
-```js
-componentDidMount() {
-  $END$
-}
-```
-
-### `cdu`
-```js
-componentDidUpdate(prevProps, prevState) {
-  $END$
-}
-```
-
-### `cef`
-```js
-const $NAME$ = () => {
-  $END$
-};
-```
-
-### `cem`
-```js
-$NAME$ = () => {
-  $END$
-}
-```
-
-### `cfp`
-```js
-const $NAME$ = ($PARAMS$) => {
-  $END$
-};
-```
-
-### `cmp`
-
-```js
-$NAME$ = ($PARAM$) => {
-  $END$
-}
-```
-
-### `con`
-
-```js
-constructor(props) {
-  super(props);
-  
-  $END$
-}
-```
-
-### `cpts`
-
-```js
-$COMPONENT$.propTypes = {
-  $START$: PropTypes.$END$,
-};
-```
-
-### `ctor`
-
-```js
-constructor(props) {
-  super(props);
-  
-  this.state = { $START$ };
-  $END$
-}
-```
-
-### `cwm`
-
-```js
-componentWillMount() {
-  $END$
-}
-```
-
-### `cwr`
-
-```js
-componentWillReceiveProps(nextProps$START$) {
-  $END$
-}
-```
-
-### `cwu`
-
-```js
-componentWillUpdate(nextProps, nextState) {
-  $END$
-}
-```
-### `cwun`
-
-```js
-componentWillUnmount() {
-  $END$
-}
-```
-
-### `drp`
-
-```js
-const { $END$ } = this.props;
-```
-
-### `dst`
-
-```js
-const { $END$ } = this.state;
-```
-
-### `ecc`
-
-```js
-export default connect($PARAM$, $PARAM2$)($COMPONENT$);
-```
-
-### `gb`
-
-```js
-getSnapshotBeforeUpdate(prevProps, prevState) {
-  $END$
-}
-```
 
 ### `im`
 
@@ -171,40 +35,6 @@ $END$
 import '$END$';
 ```
 
-### `mdp`
-
-```js
-const mapDispatchToProps = dispatch => {
-  return {
-    $END$
-  };
-};
-```
-
-### `mst`
-
-```js
-const mapStateToProps = state => {
-  return {
-    $END$
-  };
-};
-```
-
-### `pst`
-
-```js
-state = {
-  $START$: $END$,
-};
-```
-
-### `pt`
-
-```js
-$START$: PropTypes.$END$,
-```
-
 ### `rcc`
 
 ```js
@@ -223,21 +53,6 @@ $COMPONENT$.defaultProps = {};
 $COMPONENT$.propTypes = {};
 ```
 
-### `re`
-
-```js
-render() {
-  return (
-    <div>$END$</div>
-  );
-}
-```
-
-### `rf`
-
-```js
-ref={$PROPERTY$ => this.$END$ = $PROPERTY$}
-```
 
 ### `rfc`
 
@@ -294,16 +109,35 @@ $COMPONENT$.defaultProps = {};
 $COMPONENT$.propTypes = {};
 ```
 
-### `scu`
+### `con`
 
 ```js
-shouldComponentUpdate(nextProps, nextState) {
+constructor(props) {
+  super(props);
+  
   $END$
 }
 ```
 
-### `sdp`
+### `ctor`
 
+```js
+constructor(props) {
+  super(props);
+  
+  this.state = { $START$ };
+  $END$
+}
+```
+
+### `pst`
+```js
+state = {
+  $START$: $END$,
+};
+```
+
+### `sdp`
 ```js
 static defaultProps = {
   $START$: $END$,
@@ -318,10 +152,96 @@ static propTypes = {
 };
 ```
 
-### `sst`
+### `cdc`
 
 ```js
-this.setState({ $START$: $END$ });
+componentDidCatch() {
+  $END$
+}
+```
+
+### `cdm`
+```js
+componentDidMount() {
+  $END$
+}
+```
+
+### `cdu`
+```js
+componentDidUpdate(prevProps, prevState) {
+  $END$
+}
+```
+
+### `cwm`
+
+```js
+componentWillMount() {
+  $END$
+}
+```
+
+### `cwr`
+
+```js
+componentWillReceiveProps(nextProps$START$) {
+  $END$
+}
+```
+
+### `cwu`
+
+```js
+componentWillUpdate(nextProps, nextState) {
+  $END$
+}
+```
+### `cwun`
+
+```js
+componentWillUnmount() {
+  $END$
+}
+```
+
+### `scu`
+
+```js
+shouldComponentUpdate(nextProps, nextState) {
+  $END$
+}
+```
+
+### `gb`
+
+```js
+getSnapshotBeforeUpdate(prevProps, prevState) {
+  $END$
+}
+```
+
+### `re`
+
+```js
+render() {
+  return (
+    <div>$END$</div>
+  );
+}
+```
+
+### `cpts`
+
+```js
+$COMPONENT$.propTypes = {
+  $START$: PropTypes.$END$,
+};
+```
+### `pt`
+
+```js
+$START$: PropTypes.$END$,
 ```
 
 ### `tpr`
@@ -334,4 +254,82 @@ this.props.$END$
 
 ```js
 this.state.$END$
+```
+
+### `drp`
+
+```js
+const { $END$ } = this.props;
+```
+
+### `dst`
+
+```js
+const { $END$ } = this.state;
+```
+
+### `sst`
+
+```js
+this.setState({ $START$: $END$ });
+```
+
+### `mdp`
+```js
+const mapDispatchToProps = dispatch => {
+  return {
+    $END$
+  };
+};
+```
+
+### `mst`
+
+```js
+const mapStateToProps = state => {
+  return {
+    $END$
+  };
+};
+```
+
+### `ecc`
+
+```js
+export default connect($PARAM$, $PARAM2$)($COMPONENT$);
+```
+
+### `rf`
+
+```js
+ref={$PROPERTY$ => this.$END$ = $PROPERTY$}
+```
+
+### `cef`
+```js
+const $NAME$ = () => {
+  $END$
+};
+```
+
+### `cem`
+```js
+$NAME$ = () => {
+  $END$
+}
+```
+
+### `cfp`
+```js
+const $NAME$ = ($PARAMS$) => {
+  $END$
+};
+```
+
+### `cmp`
+
+```js
+$NAME$ = ($PARAM$) => {
+  $END$
+}
 ```
